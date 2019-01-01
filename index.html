@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HappyNewYear</title>
+	<link rel="stylesheet" type="text/css" href="newyear.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="intro">
+		<h1>HEY!</h1>
+    </div>
+
+    <div class="talk">
+    	<h2>Aur Kaisi Ho..</h2>
+		<p>Actually Kaffi Time Ho Gya Kuch Nya Nhi Kyi Tha...<br>Toh Socha Es Saal Ki Shuruvaat He Nye Treke Sae Kr Lun..</p>
+    </div>
+
+	<div class="new">
+		<blockquote>
+			Wishing You A New Year<br>
+			Filled With New Hope , New Aspirations<br> 
+			And New Happiness..
+		</blockquote>
+	</div>
+
+	<div class="happy">
+		<h1>HAPPY NEW YEAR</h1>
+	</div>
+
+	<div class="hindi">
+	<section>
+		<p>Aur Pichle Saal Ki Galtiyo K Liye M Really Sorry Yr..<br>Baar Baar Lag Rha Hai Kahin Na Kahin Kuch Toh Galat Kiya Hai...Uske Liye B Sorry Yr...</p>
+	</section>
+    </div>
+
+	<div class="year">
+		<blockquote>
+		Is Saal Aapke Ghar Khusiyo Ki Ho Dhamaal<br>
+		Daulat Ki Na Ho Kami Aap Ho Jaye Malamaal<br>
+		Haste Muskurate Raho Aisa Ho Subka Haal<br>
+		Tahe Dil Se Mubarak Ho Aapko Naya Saal
+	    </blockquote>
+	</div>
+</div>
+
+<div class="arrow bounce">
+  <p>Play <i class="arrow"></i></p>
+</div>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="song.mp4" type="video/mp4">
+    <source src="song.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script>
+
+<footer class="ali">
+	<h4 class="footer">By :- Ashiesh</h4>
+</footer>
+
+</body>
+</html>
